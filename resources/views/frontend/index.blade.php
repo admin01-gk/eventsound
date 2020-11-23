@@ -60,7 +60,7 @@
 					<a class="nav-link" href="#thietbi">Thiết Bị</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="{{URL::to('buy')}}">Sản Phảm</a>
+					<a class="nav-link" href="{{URL::to('trangchu')}}">Sản Phảm</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#lienhe">Liên Hệ</a>
