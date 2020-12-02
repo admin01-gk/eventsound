@@ -13,9 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
     // -----------ALL ROUTES FRONTEND---------------
+    Route::get('dangKy','IndexController@getDangky');
+    Route::post('dangKy','IndexController@postDangKy');
+
     Route::get('/', 'IndexController@index');
     // ---------------------------------------------
-    Route::get('buy', 'BuyController@getBuy');
+    Route::get('buy', 'FrontendController@getHome');
     
     Route::get('detail/{id}/{slug}.html', 'FrontendController@getDetail');
     Route::post('detail/{id}/{slug}.html', 'FrontendController@postComment');

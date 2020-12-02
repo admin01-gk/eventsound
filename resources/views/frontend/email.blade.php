@@ -1,6 +1,4 @@
 
-
-
 	<link rel="stylesheet" href="css/email.css">
 	
 					<div id="wrap-inner">

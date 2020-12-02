@@ -14,7 +14,7 @@ class VpProduct extends Migration
     public function up()
     {
         Schema::create('vp_product', function (Blueprint $table) {
-            $table->id('product_id');
+            $table->bigIncrements('product_id');
             $table->String('product_name');
             $table->String('product_slug');
             $table->integer('product_price');

@@ -37,7 +37,7 @@
         	<div class="alert alert-success">Added user success!</div>
         	<table class="table table-striped">
             	<tr id="tbl-first-row">
-                	<td width="5%">#</td>
+                	<td width="5%"></td>
                     <td width="30%">Fullname</td>
                     <td width="25%">Username</td>
                     <td width="25%">Email</td>

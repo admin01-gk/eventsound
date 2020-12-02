@@ -3,22 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use Mail;
 
 class SendMailController extends Controller
 {
    public function getSendMail(Request $request)
-   {
-       
+   { 
+    $data['info'] = $request->all();
         $email=$request->email;
-       Mail::send('frontend/index',[
-           'name'=> $request->name,
-           'phone'=>$request->phone,
-           'content'=>$request->content,
-       ], function ($mail) use ($request) {
+       Mail::send('frontend.mail',$data,
+       function ($mail) use ($request) {
            $mail->from($request->email, $request->name);
            $mail->to('truongsadng.nishu@gmail.com', 'Ngô Trường Sa');
-           $mail->cc('tieutuluumanh777@gmail.com', 'Ngô Trường Sinh');
+           $mail->cc('truongsadng.nishu@gmail.com', 'Ngô Trường Sinh');
            $mail->subject('Thông tin Khách Hàng');
        });
        return back();

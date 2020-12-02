@@ -16,8 +16,7 @@
 				);
 		}
 
-</script>
-	
+</script>	
 
 					<div id="wrap-inner">
 						<div id="list-cart">
