@@ -36,6 +36,7 @@
 								</label>
 							</div>
 							<input type="submit" name='submit' value="Đăng Nhập" class='btn btn-primary'>
+							<a href="dangKy" class="btn btn-danger">Đăng Ký</a>
 						</fieldset>
 							{!!csrf_field()!!}
 					</form>

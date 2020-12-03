@@ -14,7 +14,7 @@ class VpComment extends Migration
     public function up()
     {
         Schema::create('vp_comment', function (Blueprint $table) {
-            $table->id('comment_id');
+            $table->bigIncrements('comment_id');
             $table->string('comment_email');
             $table->string('comment_name');
             $table->string('comment_content');

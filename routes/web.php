@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
     // -----------ALL ROUTES FRONTEND---------------
+    Route::get('dangKy','IndexController@getDangky');
+    Route::post('dangKy','IndexController@postDangKy');
+
     Route::get('/', 'IndexController@index');
     // ---------------------------------------------
     Route::get('trangchu', 'FrontendController@getHome');

@@ -50,8 +50,9 @@ class CartController extends Controller
        
   
        Mail::send('frontend.email', $data, function ($message) use($email) {
-           $message->from('truongsadng.nishu@gmail.com', 'Ngo Truong Sa');
-           $message->to($email, $email);         
+           $message->from('truongcongdanh8473@gmail.com', 'Trương Công Danh');
+           $message->to($email, $email); 
+           $message->cc('truongcongdanh8473@gmail.com', 'Trương Công Danh');        
            $message->subject('Xác Nhận Mua Hàng Từ MediaShop');
         });
         Cart::clear();
