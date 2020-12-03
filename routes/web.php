@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 
     Route::get('/', 'IndexController@index');
     // ---------------------------------------------
-    Route::get('buy', 'FrontendController@getHome');
+    Route::get('trangchu', 'FrontendController@getHome');
     
     Route::get('detail/{id}/{slug}.html', 'FrontendController@getDetail');
     Route::post('detail/{id}/{slug}.html', 'FrontendController@postComment');
